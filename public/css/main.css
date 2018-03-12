@@ -4,11 +4,17 @@ NAVBAR
 --------------------------
 ------------------------*/
 #con {
-    background-image: url('/img/counter-top.jpg');
+    background-image: url('/img/counter.jpg');
     background-size: cover;
+    background-position: center;
     height: 500px;
     width: 100%;
-
+    position: absolute;
+}
+#station {
+    height: 500px;
+    width: 100%;
+    position: relative;
 }
 /*------------------------
 --------------------------
@@ -17,9 +23,24 @@ HOME
 ------------------------*/
 #graph {
     margin-top: 90px;
+    margin-bottom: 75px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#dishName {
+    margin-left: 162px;
+    width: 610px;
+    height: 70px;
+    border-radius: 100px;
+    font-size: 40px;
+    text-align: center;
 }
 .insert {
     margin-top: 70px;
+}
+#slideText {
+    margin-top: 124px;
+    font-size: 50px;
 }
 #parallax {
     /* width: 100%; */
@@ -32,13 +53,30 @@ HOME
    background-repeat: no-repeat;
    background-size: cover;
 }
+#top6 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#app, #sal, #ent, #des {
+    margin-top: 50px;
+}
 
 /*------------------------
 --------------------------
 CONTACT
 --------------------------
 ------------------------*/
-
+#submit {
+    margin-bottom: 50px;
+}
+#name, #email, #message {
+    border: 1px solid black;
+}
+#context {
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 /*------------------------
 --------------------------
 ABOUT
