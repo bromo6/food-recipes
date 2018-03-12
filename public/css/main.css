@@ -1,0 +1,61 @@
+/*------------------------
+--------------------------
+NAVBAR
+--------------------------
+------------------------*/
+#con {
+    background-image: url('/img/counter-top.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+
+}
+/*------------------------
+--------------------------
+HOME
+--------------------------
+------------------------*/
+#graph {
+    margin-top: 90px;
+}
+.insert {
+    margin-top: 70px;
+}
+#parallax {
+    /* width: 100%; */
+}
+.parallax {
+   background-image: url("/img/cutting-board.jpg");
+   min-height: 400px;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/*------------------------
+--------------------------
+CONTACT
+--------------------------
+------------------------*/
+
+/*------------------------
+--------------------------
+ABOUT
+--------------------------
+------------------------*/
+
+/*------------------------
+--------------------------
+FOOTER
+--------------------------
+------------------------*/
+#foot {
+    background: black;
+    color: white;
+    height: 200px;
+    padding: 90px;
+}
+#copy {
+    margin-left: 570px
+}
