@@ -17,3 +17,4 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::post('/get_recipes', 'RecipeController@searchRecipe');

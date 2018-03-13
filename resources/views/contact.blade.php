@@ -1,12 +1,17 @@
 @extends('master')
-@section('title', 'Food Recipes')
+
+@section('title')
+    Food Recipes
+@endsection
+
 @section('content')
+
+
     <section id="context" class="heading contact text-center">
       <h3>Contact Us</h3>
     </section>
 
-
-    <section class="container">
+    <div class="container inTouch">
       <div class="row">
         <div class="col-md-8">
           <div class="form-area">
@@ -31,5 +36,5 @@
 
         </div>
       </div>
-    </section>
+  </div>
 @endsection

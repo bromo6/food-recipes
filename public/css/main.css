@@ -26,6 +26,7 @@ HOME
     margin-bottom: 75px;
     margin-left: 30px;
     margin-right: 30px;
+    width: 400px;
 }
 #dishName {
     margin-left: 248px;
@@ -35,6 +36,12 @@ HOME
     font-size: 40px;
     text-align: center;
     border: 1px solid #08c1d6;
+}
+#intro {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 30px;
 }
 #button {
     margin-left: 521px;
@@ -99,6 +106,8 @@ h4 {
 #top6 {
     margin-top: 100px;
     margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 #app, #sal, #ent, #des {
     margin-top: 50px;
@@ -111,6 +120,9 @@ CONTACT
 ------------------------*/
 #submit {
     margin-bottom: 50px;
+}
+.inTouch {
+    margin-top: 50px;
 }
 #name, #email, #message {
     border: 1px solid black;

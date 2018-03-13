@@ -1,12 +1,20 @@
-@extends('master') @section('title', 'Food Recipes') @section('content')
+@extends('master')
+@section('title', 'Food Recipes')
+@section('content')
+<?php
+if(!empty($recipe)){
+    dump($recipe);
+}
+?>
+
 <div id="station" class="container">
-    <div  class="row">
+    <div class="row">
         <div class="col">
-            <h1 id="slideText" style="display:none;" class="text-center">Enter The Food You Are Looking For!</h1>
+            <h1 id="slideText" style="display:none;" class="text-center">What Dish Are You Looking For?</h1>
         </div>
     </div>
 
-    <form class="insert" action="get_player" method="post">
+    <form class="insert" action="get_recipes" method="post">
         @csrf
         <input id="dishName" type="text" name="dish_Name" placeholder="Enter Dish Name"></br>
         <button id="button" class="btn btn-outline-info rounded-circle" type="submit" name="button">
@@ -20,26 +28,34 @@
 GRAPH
 ---------------------
 -------------------}}
-<div id="graph" class="row">
+<div class="row">
     <div class="col">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">Picture</th>
-                    <th scope="col">Ingredients</th>
-                    <th scope="col">Cooking Time</th>
+        <div class="row mx-4">
+            @if(!empty($recipes))
+                @foreach($recipes['results'] as $recipe)
+                    <div class="col-3 mt-3 mx-0" style="padding:20px;">
+                        <img  class="recPic" width="300px" height="300px" src="https://spoonacular.com/recipeImages/{{$recipe['image']}}" />
+                    </div>
+                @endforeach
+            @endif
+            </div>
 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-
-            </tbody>
-        </table>
+        </div>
+    </div>
+</div>
+{{-------------------
+---------------------
+INTRO
+---------------------
+-------------------}}
+<div class="row">
+    <div class="col">
+        <p id="intro">
+            Hello this website was created to help make elegant foods
+            easily!<br> By simply telling us the name of any food/ingredient you
+            will be able to find<br>what ingredients are needed and how to
+            create any dish in the world!
+        </p>
     </div>
 </div>
 {{-------------------
@@ -60,11 +76,6 @@ BEST OF THE MONTH
 -------------------}}
 <div id="month" class="row">
     <div class="col-6">
-        {{-------------------
-        ---------------------
-        CARD1
-        ---------------------
-        -------------------}}
         <div class="row">
             <div class="col">
                 <h2 id="entree">Entree of the Month!</h2>
@@ -92,11 +103,6 @@ BEST OF THE MONTH
         </div>
     </div>
     <div class="col-6">
-        {{-------------------
-        ---------------------
-        CARD2
-        ---------------------
-        -------------------}}
         <div class="row">
             <div class="col">
                 <h2 id="desert">Desert of the Month!</h2>
@@ -363,7 +369,7 @@ BEST OF THE MONTH
 
 
     });
-    $(document).ready(function(){
+    $(document).ready(function() {
 
         $('#dishName').show("slide", {
             direction: "left"
