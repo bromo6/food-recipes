@@ -15,7 +15,6 @@
 </head>
 
 <body>
-<div id="con" class="container-fluid">
     <nav class="navbar navbar-expand navbar-light bg-transparent">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +28,19 @@
             </div>
         </div>
     </nav>
+<div id="con" class="container-fluid">
 </div>
 <div class="container-fluid">
     @yield('content')
 </div>
 
 
-    <footer id="foot">
+<footer id="foot">
 
-        <div id="copy" class="copyright">
-            <h7>© 2018 Food Recipes </h7>
-        </div>
-    </footer>
+    <div id="copy" class="copyright">
+        <h7>© 2018 Food Recipes </h7>
+    </div>
+</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
