@@ -16,6 +16,9 @@ NAVBAR
     width: 100%;
     position: relative;
 }
+#navback {
+    z-index: 100;
+}
 /*------------------------
 --------------------------
 HOME
@@ -36,6 +39,7 @@ HOME
     font-size: 40px;
     text-align: center;
     border: 1px solid #08c1d6;
+    box-shadow: 0px;
 }
 #intro {
     text-align: center;
@@ -53,6 +57,8 @@ HOME
 }
 #month {
     margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 #img1, #img2 {
     margin-left: 80px;
@@ -111,6 +117,28 @@ h4 {
 }
 #app, #sal, #ent, #des {
     margin-top: 50px;
+}
+h6 {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 25px;
+}
+.timeSpent {
+    text-align: center;
+}
+.foodTitle {
+    font-size: 45px;
+}
+.bookmark {
+    padding: 30px;
+}
+.footnote {
+    background: #42a3b8;
+}
+.headButt {
+    background: #42a3b8;
+    color: white;
 }
 
 /*------------------------
