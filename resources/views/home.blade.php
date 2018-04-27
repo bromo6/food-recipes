@@ -50,26 +50,21 @@ if (!empty($recipe)) {
                                     </div>
                                     <div class="col-4">
                                         <div class="row">
-                                            <div class="col timeSpent">
+                                            <div class="col timeSpent prepContainer">
                                                 <h6>Prep Time</h6>
                                                 <p class="prepTime"></p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col timeSpent">
+                                            <div class="col timeSpent cookingContainer">
                                                 <h6>Cooking Time</h6>
                                                 <p class="cookTime"></p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col timeSpent">
+                                            <div class="col timeSpent totalContainer">
                                                 <h6>Total Time</h6>
                                                 <p class="total"></p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col newPic">
-                                                <img src="..." />
                                             </div>
                                         </div>
                                     </div>
@@ -104,54 +99,23 @@ if (!empty($recipe)) {
     {{------------------- --------------------- BEST OF THE MONTH --------------------- -------------------}}
     <div id="month" class="row">
         <div class="col-6">
-            <div class="row">
-                <div class="col">
-                    <h2 id="entree">Entree of the Month!</h2>
-                </div>
-            </div>
-            <div id="card1" class="card">
+            <div id="card1" class="card facts">
                 <div class="card-body">
-                    <h4 class="card-title">Orange Chicken</h4>
+                    <h4 id="funHeader" class="card-title" style="border-bottom:1px solid black;">FUN FACT</h4>
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <div id="mini1" class="card" style="width: 10rem;">
-                                    <h5 class="card-title">Ingredients</h5>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div id="img1" class="card" style="width: 10rem;">
-                                    <img class="card-img-top" src="..." alt="Card image cap">
-                                </div>
-                            </div>
-                        </div>
+                        <p id="randomFact" style="font-size:25px;"></p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="row">
-                <div class="col">
-                    <h2 id="desert">Desert of the Month!</h2>
-                </div>
-            </div>
-            <div id="card2" class="card">
+            <div id="card2" class="card facts">
                 <div class="card-body">
-                    <h4 class="card-title">Chocolate Molten Cake</h4>
+                    <h4 class="card-title" style="border-bottom:1px solid black;">RANDOM JOKE</h4>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-6">
-                                <div id="mini2" class="card" style="width: 10rem;">
-                                    <h5 class="card-title">Ingredients</h5>
-                                    <p class="card-text"></p>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div id="img2" class="card" style="width: 10rem;">
-                                    <img class="card-img-top" src="..." alt="Card image cap">
-                                </div>
-                            </div>
+                            <p id="joke" style="font-size:25px;"></p>
+
                         </div>
                     </div>
                 </div>
@@ -161,6 +125,9 @@ if (!empty($recipe)) {
     {{------------------- --------------------- 6 PICTURES --------------------- -------------------}}
     <div id="top6" class="row">
         <div class="col">
+
+            {{------------------- --------------------- APPETIZERS --------------------- -------------------}}
+
             <div id="app" class="row">
                 <div class="col">
                     <h3>Appetizers</h3>
@@ -169,53 +136,39 @@ if (!empty($recipe)) {
             <div class="row">
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="548547" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
+
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
             </div>
+
+            {{------------------- --------------------- SALADS --------------------- -------------------}}
+
             <div id="sal" class="row">
                 <div class="col">
                     <h3>Salads</h3>
@@ -224,54 +177,38 @@ if (!empty($recipe)) {
             <div class="row">
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-2">
-                    <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
             </div>
+
+            {{------------------- --------------------- ENTREES --------------------- -------------------}}
+
             <div id="ent" class="row">
                 <div class="col">
                     <h3>Entrees</h3>
@@ -280,53 +217,38 @@ if (!empty($recipe)) {
             <div class="row">
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
             </div>
+
+            {{------------------- --------------------- DESERTS --------------------- -------------------}}
+
             <div id="des" class="row">
                 <div class="col">
                     <h3>Deserts</h3>
@@ -335,50 +257,32 @@ if (!empty($recipe)) {
             <div class="row">
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
                 <div class="col-2">
                     <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"></p>
-                        </div>
+                        <img class="card-img-top recPic" data-id="215179" src="https://spoonacular.com/recipeImages/cottage-cheese-salad-2-103182.jpg" alt="Card image cap">
                     </div>
                 </div>
             </div>
@@ -393,6 +297,25 @@ if (!empty($recipe)) {
         });
 
         $(document).ready(function() {
+
+            $.ajax({
+                url: '/get_joke',
+                method: 'get'
+            }).done(function(response) {
+                response = JSON.parse(response);
+                $("#joke").html(response.text);
+
+            });
+
+            $.ajax({
+                url: '/get_randomFact',
+                method: 'get'
+            }).done(function(response) {
+                response = JSON.parse(response)
+                $("#randomFact").html(response.text);
+            });
+
+
             $('#slideText').show("slide", {
                 direction: "left"
             }, 5000);
@@ -410,6 +333,18 @@ if (!empty($recipe)) {
                     .done(function(response) {
                         response = JSON.parse(response);
                         console.log(response);
+
+                        if (typeof response.preparationMinutes == 'undefined') {
+                            $('.prepContainer').hide();
+                        } else {
+                            $('.prepContainer').show();
+                        }
+
+                        if (typeof response.cookingMinutes == 'undefined') {
+                            $('.cookingContainer').hide();
+                        } else {
+                            $('.cookingContainer').show();
+                        }
 
                         $('.modal-title').html(response.title);
                         $('.prepTime').html(response.preparationMinutes + " minutes ");

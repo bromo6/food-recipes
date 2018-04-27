@@ -18,7 +18,7 @@
 <body>
 <div id="con" class="container-fluid">
     <nav class="navbar navbar-expand navbar-light bg-transparent" style="z-index:50;">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

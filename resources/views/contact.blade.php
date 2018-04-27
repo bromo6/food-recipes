@@ -12,6 +12,11 @@
     </section>
 
     <div class="container inTouch">
+        <div class="row">
+            <div id="context" class="col">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
       <div class="row">
         <div class="col-md-8">
           <div class="form-area">

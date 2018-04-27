@@ -81,14 +81,15 @@ h4 {
 #list {
     width: 50px;
 }
-#card1 {
-    height: 230px;
+.facts {
+    height: 265px;
     width: 510px;
+    border: 2px solid black;
+}
+#card1 {
     margin-left: 85px;
 }
 #card2 {
-    height: 230px;
-    width: 510px;
     margin-right: 85px;
 }
 .insert {
@@ -140,6 +141,12 @@ h6 {
     background: #42a3b8;
     color: white;
 }
+#funHeader {
+    border-bottom: 1px solid black;
+}
+#randomFact {
+    font-size: 15px;
+}
 
 /*------------------------
 --------------------------
@@ -150,7 +157,7 @@ CONTACT
     margin-bottom: 50px;
 }
 .inTouch {
-    margin-top: 50px;
+    margin-top: 500px;
 }
 #name, #email, #message {
     border: 1px solid black;
@@ -165,7 +172,17 @@ CONTACT
 ABOUT
 --------------------------
 ------------------------*/
-
+#aboutText {
+    height: 300px;
+}
+#aboutMe {
+    margin-top: 45px;
+    margin-left: 385px;
+}
+#aboutPic {
+    margin-top: 600px;
+    margin-left: 550px;
+}
 /*------------------------
 --------------------------
 FOOTER
@@ -179,4 +196,11 @@ FOOTER
 }
 #copy {
     margin-left: 570px
+}
+#aboutFoot {
+    background: white;
+    color: white;
+    height: 20px;
+    padding: 90px;
+    margin-top: 600px;
 }

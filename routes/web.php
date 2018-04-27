@@ -19,8 +19,17 @@ Route::get('/contact', function () {
     return view('contact');
 
 });
+
+Route::get('/about', function () {
+    return view('about');
+
+});
 Route::post('/get_recipes', 'RecipeController@searchRecipe');
 
 Route::post('/get_ingredients', 'RecipeController@searchIngredient');
 
 Route::post('/get_recipe_details', 'RecipeController@getRecipeById');
+
+Route::get('/get_joke', 'RecipeController@randomJoke');
+
+Route::get('/get_randomFact', 'RecipeController@randomFact');
